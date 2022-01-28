@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+h4 {
+  text-align: right;
+}
+a {
+  padding-top: 15px;
+}
+#question {
+  text-align: center;
+  align-items: center;
+  font-size: 45px;
+}
