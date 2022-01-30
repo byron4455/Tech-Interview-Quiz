@@ -1,10 +1,17 @@
-const quizContainer = document.getElementById('question');
-const buttonStart = document.getElementById('btnStart');
-const button1 = document.getElementById('btn1');
-const button2 = document.getElementById('btn2');
-const button3 = document.getElementById('btn3');
-const button4 = document.getElementById('btn4');
-
+// Questions
+$('#startbtn').click(function() {
+    console.log('click');
+});
+const Questions = [{
+    id: 0,
+    q: "What is JavaScript?",
+    a: [{ text: "Answer one", isCorrect: false },
+        { text: "Answer two", isCorrect: true },
+        { text: "answer three", isCorrect: false }, 
+        { text: "answer four", isCorrect: false }
+    ]
+}
+]
 var timeleft = 60;
 var quizTimer = setInterval(function() {
     if(timeleft <= 0){
